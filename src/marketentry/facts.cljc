@@ -14,16 +14,7 @@
           :rep-provenance "https://www.gebiz.gov.sg/"
           :corporate-number-owner-authority "ACRA / IRAS"
           :corporate-number-legal-basis "Unique Entity Number (UEN)"
-          :corporate-number-provenance "https://www.acra.gov.sg/"}
-   "USA" {:name "United States" :owner-authority "GSA/SAM.gov" :legal-basis "FAR"
-          :national-spec "SAM.gov" :provenance "https://sam.gov/"
-          :required-evidence ["EIN record" "SAM.gov registration record" "State business registration record" "SAM UEI verification record"]}
-   "JPN" {:name "Japan" :owner-authority "GEPS" :legal-basis "unified qualification"
-          :national-spec "GEPS" :provenance "https://www.chotatujoho.go.jp/va/com/ShikakuTop.html"
-          :required-evidence ["法人番号確認記録" "全省庁統一資格申請記録" "GEPS 事業者登録記録" "日本居住代理人確認記録"]}
-   "AUS" {:name "Australia" :owner-authority "AusTender" :legal-basis "CPRs"
-          :national-spec "AusTender" :provenance "https://www.tenders.gov.au/"
-          :required-evidence ["ABN record" "AusTender registration record" "GST registration record" "Authorized-representative record"]}})
+          :corporate-number-provenance "https://www.acra.gov.sg/"}})
 
 (defn spec-basis [iso3] (get catalog iso3))
 (defn coverage
